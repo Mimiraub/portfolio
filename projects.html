@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1024">
+
+  <title>My Work - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="navbar">
+      <h1 class="logo"><i class="fas fa-user-circle"></i> My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="academic.html"><i class="fas fa-graduation-cap"></i> Academic</a></li>
+          <li><a href="projects.html" class="active"><i class="fas fa-folder-open"></i> Work</a></li>
+         
+          <li><a href="skills.html"><i class="fas fa-star"></i> Skills</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="section-title">
+      <h2>My Work Portfolio</h2>
+      <p>Here are some of the projects I’ve worked on throughout my studies at UTeM.</p>
+    </section>
+
+    <section class="section-grid">
+
+      <!-- CARD 1 -->
+      <div class="card">
+        <div class="carousel">
+          <img src="Picture1a.png" class="active" alt="Project 1a">
+          <img src="Picture1b.png" alt="Project 1b">
+          <button class="carousel-btn prev" onclick="changeImage(this, -1)">&#10094;</button>
+          <button class="carousel-btn next" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+        <h3>Movie Ticket System</h3>
+        <p>A system for online ticket booking using Visual Studio. Includes genre, age restrictions, seating, food & beverages, and discount voucher system.</p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <div class="carousel">
+          <img src="Picture2a.png" class="active" alt="Project 2a">
+          <img src="Picture2b.png" alt="Project 2b">
+          <button class="carousel-btn prev" onclick="changeImage(this, -1)">&#10094;</button>
+          <button class="carousel-btn next" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+        <h3>Sistem Kursus Perkahwinan</h3>
+        <p>System using HTML, PHP, JavaScript, and MySQL for booking Pre-Marriage Course. User can choose date/time to suit their schedule.</p>
+      </div>
+
+      <!-- CARD 3: YouTube Video (No Carousel) -->
+      <div class="card youtube-card">
+        <img src="Picture3.jpg" alt="Stop Motion">
+        <h3>Stop-Motion Product Advertisement</h3>
+        <p>A 1min30s clay animation promoting a fictional product. Includes storyline and 4 principles of animation.</p>
+        <a href="https://youtu.be/ot-DQ68tM6k" target="_blank" class="btn">Watch Video</a>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card">
+        <div class="carousel">
+          <img src="Picture4a.png" class="active" alt="Project 4a">
+          <img src="Picture4b.png" alt="Project 4b">
+          <button class="carousel-btn prev" onclick="changeImage(this, -1)">&#10094;</button>
+          <button class="carousel-btn next" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+        <h3>Network Infrastructure Simulation</h3>
+        <p>Designed and simulated a complete enterprise network for HQ and two branches using Cisco Packet Tracer.</p>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="card">
+        <div class="carousel">
+          <img src="Picture5a.jpg" class="active" alt="Project 5a">
+          <img src="Picture5b.jpg" alt="Project 5b">
+          <button class="carousel-btn prev" onclick="changeImage(this, -1)">&#10094;</button>
+          <button class="carousel-btn next" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+        <h3>Online Bookstore Wireframe</h3>
+        <p>Designed mobile wireframe for bookstore app with usability focus for different user types.</p>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="card">
+        <div class="carousel">
+          <img src="Picture6a.png" class="active" alt="Project 6a">
+          <img src="Picture6b.png" alt="Project 6b">
+          <button class="carousel-btn prev" onclick="changeImage(this, -1)">&#10094;</button>
+          <button class="carousel-btn next" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+        <h3>UTeM Library Adventure Game</h3>
+        <p>Text-based adventure game written in MIPS Assembly. Solve math challenges to escape from library while gaining points.</p>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="card">
+        <div class="carousel">
+          <img src="Picture7a.jpg" class="active" alt="Project 7a">
+          <img src="Picture7b.jpg" alt="Project 7b">
+          <button class="carousel-btn prev" onclick="changeImage(this, -1)">&#10094;</button>
+          <button class="carousel-btn next" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+        <h3>Medical App Persona Analysis</h3>
+        <p>Analyzed medical app scenarios and personas to find usability issues for young adults, elderly, and caregivers.</p>
+      </div>
+
+      <div class="card">
+        <div class="carousel">
+          <img src="Picture8a.jpg" class="active" alt="Project 7a">
+          <img src="Picture8b.jpg" alt="Project 7b">
+          <button class="carousel-btn prev" onclick="changeImage(this, -1)">&#10094;</button>
+          <button class="carousel-btn next" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+        <h3>Library Room Booking System</h3>
+        <p>This system allows UTeM students to book study rooms in the library. Students can select a room type, date, and time slot according to availability, helping them manage their study space efficiently. </p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; 2025 <strong>Mimi Ain Aleeya</strong>. All rights reserved.
+      &nbsp;|&nbsp;
+      
+    </p>
+  </footer>
+
+  <!-- JavaScript untuk Carousel -->
+  <script>
+    function changeImage(button, direction) {
+      const carousel = button.closest(".carousel");
+      const images = carousel.querySelectorAll("img");
+      let index = [...images].findIndex(img => img.classList.contains("active"));
+
+      images[index].classList.remove("active");
+      index = (index + direction + images.length) % images.length;
+      images[index].classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
+
+
