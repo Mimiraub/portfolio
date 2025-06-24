@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact - Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+   html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+    .contact-icon {
+      font-size: 36px;
+      color: #198754;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 40px 20px;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      max-width: 1100px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+
+    .contact-left, .contact-right {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .contact-left div {
+      margin-bottom: 25px;
+    }
+
+    .contact-left h4 {
+      margin-bottom: 5px;
+    }
+
+   .contact-left a {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+
+.contact-left a:hover {
+  color: #2D89EF;
+  text-decoration: underline;
+}
+
+
+    .contact-right {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-right h3 {
+      text-align: center;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .contact-right button {
+      padding: 10px 25px;
+      background: #2D89EF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #successMsg {
+      display: none;
+      margin-top: 15px;
+      color: #2D89EF;
+      font-weight: bold;
+      text-align: center;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1 class="logo"><i class="fas fa-user-circle"></i> My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="academic.html"><i class="fas fa-graduation-cap"></i> Academic</a></li>
+          <li><a href="projects.html"><i class="fas fa-folder-open"></i> Work</a></li>
+          <li><a href="skills.html"><i class="fas fa-star"></i> Skills</a></li>
+          <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-title">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out through any of the channels below or send me a message directly!</p>
+    </section>
+
+    <section class="contact-wrapper">
+      <!-- Contact Info Kiri -->
+      <div class="contact-left">
+        <div>
+          <i class="fas fa-envelope contact-icon"></i>
+          <h4>Email</h4>
+          <p><a href="mailto:mimiraub493@gmail.com">mimiraub493@gmail.com</a></p>
+        </div>
+        <div>
+          <i class="fas fa-phone contact-icon"></i>
+          <h4>Phone</h4>
+          <p><a href="tel:+60146427592">014-6427592</a></p>
+        </div>
+        <div>
+          <i class="fab fa-linkedin contact-icon"></i>
+          <h4>LinkedIn</h4>
+          <p><a href="https://www.linkedin.com/in/mimi-ain-479a07317/" target="_blank" rel="noopener">linkedin.com/in/mimi-ain</a></p>
+        </div>
+        <div>
+          <i class="fab fa-github contact-icon"></i>
+          <h4>GitHub</h4>
+          <p><a href="https://mimiraub.github.io/portfolio/" target="_blank" rel="noopener">github.com/Mimiraub</a></p>
+        </div>
+      </div>
+
+      <!-- Form Kanan -->
+      <div class="contact-right">
+        <h3>Send Me a Message</h3>
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required rows="5"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="successMsg">✅ Message successfully submitted!</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+     <p>&copy; 2025 <strong>Mimi Ain Aleeya</strong>. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript Success Message -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("successMsg").style.display = "block";
+      setTimeout(function() {
+        document.getElementById("successMsg").style.display = "none";
+      }, 3000);
+      this.reset();
+    });
+  </script>
+</body>
+</html>
+
